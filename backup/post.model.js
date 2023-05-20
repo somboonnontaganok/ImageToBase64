@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { Binary } from 'mongodb';
 
 const postSchema = new mongoose.Schema({
     myFile : String
