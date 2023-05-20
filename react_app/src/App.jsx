@@ -36,10 +36,10 @@ function App() {
     toggleReload(!load);
   };
 
-  const confirmDelete = (id) => {
+  const confirmDelete = async (id) => {
     let text = "Press a button!\nEither OK or Cancel.";
     if (confirm(text) == true) {
-        deleteActivities(id);
+        await deleteActivities(id);
         toggleReload(!load);
     } else {
         alert("You canceled!");
